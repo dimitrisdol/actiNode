@@ -1,0 +1,20 @@
+# permissions for end users to view actinodes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: actinode-viewer-role
+rules:
+- apiGroups:
+  - apis.my.domain
+  resources:
+  - actinodes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - apis.my.domain
+  resources:
+  - actinodes/status
+  verbs:
+  - get

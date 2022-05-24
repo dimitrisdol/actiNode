@@ -1,0 +1,6 @@
+apiVersion: apis.my.domain/v1
+kind: ActiNode
+metadata:
+  name: actinode-sample
+spec:
+  # TODO(user): Add fields here
